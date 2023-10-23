@@ -24,7 +24,7 @@ db.connect(err => {
 
 // Configura las rutas de tu API REST
 app.get('/api/clientes', (req, res) => {
-  // Aquí debes escribir el código para obtener la lista de clientes desde la base de datos
+  // Aquí ingrese el código para obtener la lista de clientes desde la base de datos
   db.query('SELECT * FROM clientes', (err, results) => {
     if (err) {
       console.error('Error al obtener clientes: ' + err.message);
