@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tableBody = document.getElementById('clientes-table');
   
-    // Hacer una solicitud GET a la API para obtener la lista de clientes
+    // se hace solicitud GET a la API para obtener la lista de clientes
     fetch('/api/clientes', { method: 'GET' })
       .then(response => response.json())
       .then(data => {
